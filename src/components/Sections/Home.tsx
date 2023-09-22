@@ -1,23 +1,25 @@
 'use client'
-import { BDAY_TIME } from "@/utils/consts";
-import Particle from "../Particle";
 import Typewriter from "../Typewriter";
-import { useState } from 'react';
-import { useEffect } from 'react';
 import Accent from "../Accent";
 import useAge from "@/hooks/useAge";
+import LazyComponent from "../LazyComponent";
 
 
 const HomeSection = () => {
 
     const [age, setAge] = useAge();
 
-    return <section id='home' className="h-96 flex animate-up flex-col items-center text-2xl gap-4 gap-y-8">
+    return <LazyComponent>
+        <section id='home' className="h-96 flex animate-up flex-col items-center text-2xl gap-4 gap-y-8">
         {/* <Particle /> */ /* TODO: Fix particles unshowing */}
-        <p className="text-text dark:text-dark-text font-mono font-bold text-7xl">Hey, I&apos;m <Typewriter/></p>
-        <p>I{"'"}m a <Accent>{age}</Accent> years old <Accent>fullstack web developer</Accent> from Israel</p> 
+        <p className="text-text dark:text-dark-text font-mono font-bold text-7xl">Hey, I{"'"}m <Typewriter/></p>
+        <div className="text-center">
+            <p>I{"'"}m a <Accent>{age}</Accent> years old <Accent>fullstack web developer</Accent> from Israel</p> 
+            <p>I am experienced with programming for 6 years of my life</p>
+        </div>
         
-    </section>
+        </section>
+    </LazyComponent>
 }
 
 export default HomeSection;
