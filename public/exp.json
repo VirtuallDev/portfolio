@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Game Developer",
+        "img": "",
+        "description": "Learning and making games with Unity Engine",
+        "from": "2018",
+        "to": "2019"
+    },
+    {
+        "title": "Frontend Designer",
+        "img": "",
+        "description": "Learning the basics of UI designing with HTML/CSS/JS",
+        "from": "2019",
+        "to": "2020"
+    },
+    {
+        "title": "Backend Developer",
+        "img": "",
+        "description": "During the COVID-19 lockdown: Studying more about Discord.JS, making bots and simple tools",
+        "from": 2020,
+        "to": "2021"
+    },
+    {
+        "title":"Backend Developer",
+        "img": "",
+        "description": "Discovering Express.JS and starting to learn Lua language for FiveM scripting",
+        "from": "2021",
+        "to": "2022"
+    },
+    {
+        "title": "Magshimim-Cyber Student",
+        "img": "",
+        "description": "Being accepted to the Magshimim-Cyber plan, read about it more!",
+        "from": "2022",
+        "to": "Still Going"
+    },
+    {
+        "title": "Fullstack Developer",
+        "img": "",
+        "description": "With the tools of the 1th year and self learning, I mastered React.js, Nest.js and socket programming!",
+        "from": "2023",
+        "to": "Still Going"
+    }
+
+]

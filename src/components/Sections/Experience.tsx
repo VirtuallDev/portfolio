@@ -1,8 +1,28 @@
+'use client'
+import { ExperienceProps } from "@/types";
 import Accent from "../Accent";
 import LazyComponent from "../LazyComponent"
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 const ExperienceSection = () => {
+
+    const [exps, setExps] = useState<ExperienceProps[]>([]);
+
+    const fetchExps = async () => {
+        try {
+            const res = await fetch('/api/experience');
+            const data = await res.json();
+            setExps(data);
+        } catch {
+            console.error('error fetching experiences');
+        }
+    }
+
+    useEffect(() => {
+        fetchExps();
+    }, []);
 
     return <LazyComponent>
         <section id="exp" className="h-96 flex flex-col items-center text-2xl gap-4 gap-y-8">
