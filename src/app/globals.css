@@ -4,9 +4,10 @@
 
 @layer base {
     body {
-        @apply dark:bg-dark-background bg-background;
-        @apply transition-colors duration-200;
+      @apply dark:bg-dark-background bg-background;
+      @apply transition-colors duration-200;
     }
+
 
 }
 

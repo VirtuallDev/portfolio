@@ -19,7 +19,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button
-      className={`text-text dark:text-white`}
+      className={`text-text dark:text-white border-none`}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "light" ? <BsFillSunFill /> : <BsFillMoonFill />}

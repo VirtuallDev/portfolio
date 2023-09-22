@@ -13,6 +13,7 @@ const config: Config = {
         dark: {
           'text': '#edfdfd',
           'background': '#042425',
+          'secondary-bg': '#031b1c',
           'primary': '#d2feff',
           'secondary': '#031b1c',
           'accent': '#16d1d4',
@@ -20,6 +21,7 @@ const config: Config = {
 
         'text': '#042425',
         'background': '#edfdfd',
+        'secondary-bg': '#cedbdb',
         'primary': '#d2feff',
         'secondary': '#bff6f8',
         'accent': '#084849',

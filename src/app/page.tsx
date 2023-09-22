@@ -1,11 +1,59 @@
-import Typewriter from "@/components/Typewriter"
+import HomeSection from "@/components/Sections/Home"
 
 export default function Home() {
   return (
     <div>
-      <section className="h-96 flex animate-up flex-col items-center text-7xl gap-4">
-        <p className="text-text dark:text-dark-text font-mono font-bold">Hey, I&apos;m <Typewriter/></p>
-      </section>
+      <HomeSection />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </div>
   )
 }
