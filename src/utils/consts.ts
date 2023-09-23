@@ -3,6 +3,10 @@ export const SECTIONS = [
         'title': 'Home',
         'section': 'home'
     },
+    {
+        'title': 'My Experience',
+        'section': 'exp'
+    }
 ]
 
 

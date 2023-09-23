@@ -9,17 +9,15 @@ const HomeSection = () => {
 
     const [age, setAge] = useAge();
 
-    return <LazyComponent>
-        <section id='home' className="h-96 flex animate-up flex-col items-center text-2xl gap-4 gap-y-8">
+    return <section id='home' className="h-96 flex animate-up flex-col items-center text-2xl gap-4 gap-y-8">
         {/* <Particle /> */ /* TODO: Fix particles unshowing */}
         <p className="text-text dark:text-dark-text font-mono font-bold text-7xl">Hey, I{"'"}m <Typewriter/></p>
-        <div className="text-center">
+        <div className="text-center text-text dark:text-dark-text font-bold text-xl">
             <p>I{"'"}m a <Accent>{age}</Accent> years old <Accent>fullstack web developer</Accent> from Israel</p> 
             <p>I am experienced with programming for 6 years of my life</p>
         </div>
         
         </section>
-    </LazyComponent>
 }
 
 export default HomeSection;

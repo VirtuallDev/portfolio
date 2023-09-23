@@ -12,9 +12,9 @@ const Navbar = () => {
     const scroll = useScroll();
 
     return <header>
-        <nav className="flex fixed top-0 w-full px-64 h-32 navbar-shadow bg-inherit bg-secondary-bg dark:bg-dark-secondary-bg">
+        <nav className="flex fixed top-0 w-full px-64 h-32 z-50 navbar-shadow bg-inherit bg-secondary-bg dark:bg-dark-secondary-bg">
             <ul className="flex items-center gap-4 w-full text-text">
-                <p className="py2 px-3 text-4xl font-bold text-dark-secondary dark:text-secondary">Virtual</p>
+                <p className="py2 px-3 text-4xl font-bold text-dark-secondary dark:text-secondary">Nitay</p>
 
                 {SECTIONS.map((i, k) => (
                     <li key={k} onClick={() => scroll(i.section)} className={cName}>{i.title}</li>

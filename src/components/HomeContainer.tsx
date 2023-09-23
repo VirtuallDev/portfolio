@@ -1,19 +1,24 @@
+import LazyComponent from "./LazyComponent";
+import ScrollToSection from "./ScrollToSection";
 import ExperienceSection from "./Sections/Experience";
 import HomeSection from "./Sections/Home";
 
 
 const SECTIONS = [
-    HomeSection,
-    ExperienceSection
+    {"id": "home", Element: HomeSection},
+    {"id": "exp", Element: ExperienceSection}
 ]
 
 const HomeContainer = () => (
     <div>
         {SECTIONS.map((Element, k) => (
-            <div key={k}>
-                <Element />
+            <LazyComponent key={k}>
+                <div className="flex flex-wrap flex-col justify-center items-center gap-4">
+                <Element.Element />
+                <ScrollToSection secId={SECTIONS[k + 1]?.id ?? "footer"} />
                 <div className="h-[48rem]"></div>
-            </div>
+                </div>
+            </LazyComponent>
         ))}
     </div>
 );

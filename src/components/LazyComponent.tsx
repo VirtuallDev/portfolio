@@ -16,7 +16,7 @@ const LazyComponent = ({children}: any) => {
         });
      },
      {
-      threshold: 0.5,
+      threshold: 0.15,
      }
      );
 

@@ -22,6 +22,7 @@ const config: Config = {
         'text': '#042425',
         'background': '#edfdfd',
         'secondary-bg': '#cedbdb',
+        'secondary-text': '#031b1c',
         'primary': '#d2feff',
         'secondary': '#bff6f8',
         'accent': '#084849',
