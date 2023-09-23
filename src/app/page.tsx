@@ -3,7 +3,7 @@ import ScrollUp from "@/components/ScrollUp"
 
 export default function Home() {
   return (
-    <div>
+    <div className="mt-auto">
       <ScrollUp />
       <HomeContainer />
     </div>

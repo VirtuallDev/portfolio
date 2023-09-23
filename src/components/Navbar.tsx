@@ -14,15 +14,15 @@ const Navbar = () => {
     const scroll = useScroll();
 
     return <header>
-        <nav className="flex fixed top-0 w-full px-64 h-32 z-50 navbar-shadow bg-inherit bg-secondary-bg dark:bg-dark-secondary-bg">
-            <ul className="flex items-center gap-4 w-full text-text">
-                <p className="py2 px-3 text-4xl font-bold text-dark-secondary dark:text-secondary">Nitay</p>
+        <nav className="flex flex-wrap fixed w-full px-64 py-10 h-auto z-50 navbar-shadow bg-inherit bg-secondary-bg dark:bg-dark-secondary-bg mb-auto">
+            <ul className="flex flex-wrap flex-row items-center gap-4 w-full text-text">
+                <p className="absolute left-36 text-4xl font-bold text-dark-secondary dark:text-secondary">Nitay</p>
 
                 {SECTIONS.map((i, k) => (
                     <li key={k} onClick={() => scroll(i.section)} className={cName}>{i.title}</li>
                 ))}
 
-                <li className={`text-4xl ml-auto flex flex-row gap-4`}>
+                <li className={`text-4xl absolute right-36 flex flex-row gap-4`}>
                     <Link target="_blank" className="text-text dark:text-white border-none" href={'https://github.com/VirtuallDev/portfolio'}><DiGithubBadge /></Link>
                     <ThemeSwitcher />
                 </li>
