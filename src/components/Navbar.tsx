@@ -3,6 +3,8 @@
 import useScroll from "@/hooks/useScroll";
 import { ThemeSwitcher } from "./ToggleTheme";
 import { SECTIONS } from "@/utils/consts";
+import Link from "next/link";
+import { DiGithubBadge } from "react-icons/di";
 
 const cName = "transition-all ease-out cursor-pointer px-4 py2 text-xl font-bold text-text dark:text-dark-text hover:text-accent hover:dark:text-dark-accent"
 
@@ -20,7 +22,10 @@ const Navbar = () => {
                     <li key={k} onClick={() => scroll(i.section)} className={cName}>{i.title}</li>
                 ))}
 
-                <li className={`text-4xl ml-auto`}><ThemeSwitcher /></li>
+                <li className={`text-4xl ml-auto flex flex-row gap-4`}>
+                    <Link target="_blank" className="text-text dark:text-white border-none" href={'https://github.com/VirtuallDev/portfolio'}><DiGithubBadge /></Link>
+                    <ThemeSwitcher />
+                </li>
             </ul>
         </nav>
     </header>

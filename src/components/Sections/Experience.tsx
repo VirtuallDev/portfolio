@@ -26,12 +26,10 @@ const ExperienceSection = () => {
         fetchExps();
     }, []);
 
-    return <LazyComponent>
-        <section id="exp" className="h-full flex flex-col items-center text-2xl gap-4 gap-y-8">
-           <h1 className="text-7xl font-bold">My <Accent>Experience</Accent></h1>
+    return <section id="exp" className="h-full flex flex-col items-center text-2xl gap-4 gap-y-8">
+           <div className="text-text dark:text-dark-text text-7xl font-bold">My <Accent>Experience</Accent></div>
            <ExperienceCardSet set={exps} />
-        </section>
-    </LazyComponent>
+    </section>
 }
 
 export default ExperienceSection;
